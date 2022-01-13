@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --verypale-blue: hsl(225, 100%, 98%);
+    --desat-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif; 
+    background-color: var(--pale-blue);
+}
+.container{
+    max-width: 90%;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    background-color: var(--verypale-blue);
+    border-radius: .75em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 .5em 5px hsl(224, 23%, 55%, .3);
+}
+
+.hero img{
+    max-width: 100%;
+    border-radius: .75em .75em 0 0;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 1.25em;
+}
+
+.main h2{
+    font-weight: 700;
+    margin-bottom: .75em;
+}
+
+.main p{
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+    color: var(--desat-blue);
+    font-size: 16px;
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: hsl(224, 23%, 55%, .05);
+    margin-left: 1.25em;
+    margin-right: 1.25em;
+    border-radius: .75em;
+    align-items: center;
+    padding: 1em;
+}
+
+.plan{
+    margin-right: 2em;
+    margin-left: 1em;
+}
+
+.plan-head{
+    font-weight: 900;
+    font-size: .85em;
+}
+
+.plan-p{
+    color: var(--desat-blue);
+    font-size: .75em;
+}
+
+.price a{
+    font-size: .75em;
+    color:hsl(245, 75%, 52%);
+    font-weight: 900;
+}
+
+.price a:hover{
+    color:hsl(223, 47%, 23%);
+}
+
+button {
+    font-size: 14px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 700;
+    background: var(--clr-bright-blue);
+    color: var(--clr-pale-blue);
+    padding: .75em 5em;
+    border-radius: .75em;
+    margin: 0 auto;
+  }
+.buttons{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.proceed{
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%);
+    margin-bottom: 1em;
+    box-shadow: 0 1em 5px var(--pale-blue);
+}
+
+.proceed:hover{
+    background-color: hsl(224, 23%, 55%);
+}
+
+.cancel{
+    border: none;
+    color: var(--desat-blue);
+}
+
+.cancel:hover{
+    color:hsl(223, 47%, 23%);
+}
+
+@media(min-width: 500px){
+    .container{
+        width: 450px;
+        margin: 4rem auto 1rem;
+    }
+}
