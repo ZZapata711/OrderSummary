@@ -15,8 +15,11 @@
 body{
     font-family: 'Red Hat Display', sans-serif; 
     background-color: var(--pale-blue);
-    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
+
 .container{
     max-width: 90%;
     margin-top: auto;
